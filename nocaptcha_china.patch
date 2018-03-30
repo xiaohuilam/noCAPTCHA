@@ -1,0 +1,28 @@
+diff --git a/src/NoCaptcha.php b/src/NoCaptcha.php
+index c327dcb..0150890 100644
+--- a/src/NoCaptcha.php
++++ b/src/NoCaptcha.php
+@@ -18,8 +18,8 @@ class NoCaptcha implements Contracts\NoCaptcha
+      | -----------------------------------------------------------------
+      */
+ 
+-    const CLIENT_URL   = 'https://www.google.com/recaptcha/api.js';
+-    const VERIFY_URL   = 'https://www.google.com/recaptcha/api/siteverify';
++    const CLIENT_URL   = 'https://www.recaptcha.net/recaptcha/api.js';
++    const VERIFY_URL   = 'https://www.recaptcha.net/recaptcha/api/siteverify';
+     const CAPTCHA_NAME = 'g-recaptcha-response';
+ 
+     /* -----------------------------------------------------------------
+diff --git a/tests/Laravel/FacadeTest.php b/tests/Laravel/FacadeTest.php
+index 11f497b..3a785ba 100644
+--- a/tests/Laravel/FacadeTest.php
++++ b/tests/Laravel/FacadeTest.php
+@@ -42,7 +42,7 @@ class FacadeTest extends LaravelTestCase
+      */
+     private function getScriptTag($lang = 'en')
+     {
+-        $url = 'https://www.google.com/recaptcha/api.js';
++        $url = 'https://www.recaptcha.net/recaptcha/api.js';
+ 
+         return '<script src="' . $url . '?hl=' . $lang . '" async defer></script>';
+     }
