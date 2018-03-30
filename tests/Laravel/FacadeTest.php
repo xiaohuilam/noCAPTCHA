@@ -42,7 +42,7 @@ class FacadeTest extends LaravelTestCase
      */
     private function getScriptTag($lang = 'en')
     {
-        $url = 'https://www.google.com/recaptcha/api.js';
+        $url = 'https://www.recaptcha.net/recaptcha/api.js';
 
         return '<script src="' . $url . '?hl=' . $lang . '" async defer></script>';
     }
