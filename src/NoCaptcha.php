@@ -18,8 +18,8 @@ class NoCaptcha implements Contracts\NoCaptcha
      | -----------------------------------------------------------------
      */
 
-    const CLIENT_URL   = 'https://www.google.com/recaptcha/api.js';
-    const VERIFY_URL   = 'https://www.google.com/recaptcha/api/siteverify';
+    const CLIENT_URL   = 'https://www.recaptcha.net/recaptcha/api.js';
+    const VERIFY_URL   = 'https://www.recaptcha.net/recaptcha/api/siteverify';
     const CAPTCHA_NAME = 'g-recaptcha-response';
 
     /* -----------------------------------------------------------------
